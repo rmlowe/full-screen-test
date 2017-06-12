@@ -5,7 +5,11 @@
    </head>
    <body id="the-body">
       <h1 id="the-title">Wants full-screen</h1>
-      <video id="the-video">
+      <video width="320" height="240" controls id="the-video">
+         <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+         <source src="https://www.w3schools.com/html/movie.ogg" type="video/ogg">
+         Your browser does not support the video tag.
+      </video>
       <button onclick="document.documentElement.webkitRequestFullscreen();">Go full-screen!</button>
       <button onclick="document.getElementById('the-title').webkitRequestFullscreen();">Go full-screen for title!</button>
       <button onclick="document.getElementById('the-video').webkitRequestFullscreen();">Go full-screen for video!</button>
